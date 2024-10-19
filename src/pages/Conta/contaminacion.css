@@ -1,0 +1,18 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del contenedor principal */
+.container-conta {
+    color: #000000;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f99eb0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
