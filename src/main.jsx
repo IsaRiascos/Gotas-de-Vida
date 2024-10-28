@@ -9,7 +9,7 @@ import Conta from "./pages/Conta/contaminacion";
 import Escazes from "./pages/escazes/Escazes"
 import Acidificacion from "./pages/acificacion/Acidficacion";
 import Perfil from "./pages/perfil/Perfil";
-import Scena from "./pages/Conta/scena-conta/scena";
+import Scena from "./pages/Conta/scena-conta/Scena";
 
 
 
