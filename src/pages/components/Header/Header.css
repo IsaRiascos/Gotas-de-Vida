@@ -1,6 +1,8 @@
 header {
     padding: 1rem;
-    background-color: #9df7f7;
+    background-color: #1A4AD9;
+    font-family: 'Lucids Console',monospace;
+    
   }
   
   nav ul {
@@ -19,7 +21,7 @@ header {
   }
   
   nav ul li a {
-    color: rgb(4, 4, 4);
+    color: rgb(251, 249, 249);
     text-decoration: none;
     font-size: large;
   }

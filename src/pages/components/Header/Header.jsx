@@ -16,22 +16,28 @@ const Header = () => {
             </li>
 
             <li>
-              {/* Link a la página de login */}
+              {/* Link a la página de inicio */}
               <Link to="/home">Inicio</Link>
             </li>
             <li>
-              {/* Link a la página de login */}
+              {/* Link a la página de contaminacion */}
               <Link to="/contaminacion">Contaminacion de agua</Link>
             </li>
 
             <li>
-              {/* Link a la página de login */}
+              {/* Link a la página de escazes */}
               <Link to="/escazes">Escazes de agua </Link>
             </li>
 
             <li>
-              {/* Link a la página de login */}
+              {/* Link a la página de acidificacion */}
               <Link to="/acidificacion">Acidificacion de los oceanos  </Link>
+            </li>
+
+            <li>
+              {/* Link a la página de acidificacion */}
+              <Link to="/perfil">Perfil  </Link>
+              
             </li>
       
             

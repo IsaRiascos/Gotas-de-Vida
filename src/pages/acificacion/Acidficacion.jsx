@@ -6,7 +6,7 @@ const Acidificacion= () => {
     <>
       <Header />
       <div className="container-acidificacion">
-        <p>me alegrooo</p>
+        <p></p>
       </div>
     </>
   );

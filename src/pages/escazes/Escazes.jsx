@@ -6,7 +6,7 @@ const escazes = () => {
     <>
       <Header />
       <div className="container-escazes">
-        <p>bien y tu </p>
+        <p>  </p>
       </div>
     </>
   );

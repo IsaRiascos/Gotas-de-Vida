@@ -8,16 +8,23 @@ import Home from "./pages/home/Home";
 import Conta from "./pages/Conta/contaminacion";
 import Escazes from "./pages/escazes/Escazes"
 import Acidificacion from "./pages/acificacion/Acidficacion";
+import Perfil from "./pages/perfil/Perfil";
+import Scena from "./pages/Conta/scena-conta/scena";
+
 
 
 const router = createBrowserRouter([
-  { path: "/login",element: <Login />,},
-  {path: "*" ,element: <Page404/>},
+  
+  { path: "/login",element: <Login />},
+  {path: "/*" ,element: <Page404/>},
   {path: "/home", element: <Home/>},
   {path: "/contaminacion", element: <Conta/>},
   {path: "/escazes", element: <Escazes/>},
   {path: "/acidificacion", element: <Acidificacion/>},
-
+  {path: "/perfil", element: <Perfil/>, },
+  {path: "/Scena", element: <Scena/>, }
+  
+  
   
 
   

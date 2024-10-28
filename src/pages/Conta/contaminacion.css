@@ -1,18 +1,31 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Estilo del contenedor principal */
 .container-conta {
+    font-family: 'Lucids Console',monospace;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    padding: 43px;
+    background-color:   #d9b5a050;
+    
+}
+
+#Texto {
     color: #000000;
-    max-width: 1200px;
-    margin: 50px auto;
+    width: 50%;
     padding: 20px;
-    background-color: #f99eb0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    
+}
+
+h1{
+    font-family: 'Lucids Console',monospace;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(47, 47, 252);
+    
 }
 

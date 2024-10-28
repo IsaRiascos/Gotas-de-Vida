@@ -11,13 +11,30 @@
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #daebf7;
+    background-color: #1675f227;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 p{
+    font-family: 'Lucids Console',monospace;
     margin: 2%;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.5em;
+    color:#000000
+    
 }
+
+p1{
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    color:blue;
+    font-weight: bold;
+    font-family: 'Lucids Console',monospace;}
+
+
+
