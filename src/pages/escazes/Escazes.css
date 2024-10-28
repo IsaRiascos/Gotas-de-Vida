@@ -1,0 +1,38 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Estilo del contenedor principal */
+.container-escazes {
+    color: #000000;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3D8BF2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-family: 'Lucida Console', monospace;
+    }
+    
+    h1, p {
+    font-family: 'Lucida Console', monospace;
+    
+    
+}
+/*Contenedor gota*/
+.canvas-container {
+    background-color: #1675f2;
+    width: 80vw; /* 80% del ancho de la ventana */
+    height: 60vh; /* 60% de la altura de la ventana */
+    margin: 0 auto;
+    border: 2px solid #ccc;
+
+  }
+  
