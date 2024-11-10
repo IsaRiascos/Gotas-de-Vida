@@ -42,13 +42,7 @@ const Header = () => {
               
             </li>
 
-            <li>
-              {/* Link a la página de acidificacion */}
-              <Link to="/Causas">Causas  </Link>
 
-              
-              
-            </li>
       
             
           </ul>

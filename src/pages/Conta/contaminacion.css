@@ -41,7 +41,7 @@ h1{
     
 }
 
-.Buton{
+.buttonContainer{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -50,7 +50,7 @@ h1{
 
 /*boton*/
 
-.buton {
+.button {
     position: relative;
     padding: 15px 45px;
     background: #f8b88ae7;
