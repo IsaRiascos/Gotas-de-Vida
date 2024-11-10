@@ -39,45 +39,8 @@ const contaminacion = () => {
           </div>
         </div>
         <div className="buttonContainer">
-  <button className="button">
     <a href="/Causas" className="buttonLink">Causas</a>
-    <div className="icon icon-1">
-      <svg
-        viewBox="0 0 26.3 65.33"
-        style={{
-          shapeRendering: "geometricPrecision",
-          textRendering: "geometricPrecision",
-          imageRendering: "optimizeQuality",
-          fillRule: "evenodd",
-          clipRule: "evenodd",
-        }}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M13.98 52.87c0.37,-0.8 0.6,-1.74 0.67,-2.74 ... 3.13,2.46zm-4.09 -16.89l-0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 0.01 0.01z"
-          className="fil0"
-        />
-      </svg>
-    </div>
-    <div className="icon icon-2">
-      <svg
-        viewBox="0 0 11.67 37.63"
-        style={{
-          shapeRendering: "geometricPrecision",
-          textRendering: "geometricPrecision",
-          imageRendering: "optimizeQuality",
-          fillRule: "evenodd",
-          clipRule: "evenodd",
-        }}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M7.63 35.26c-0.02,0.13 0.01,0.05 -0.06,0.14 ... -0.74,2.46z"
-          className="fil0"
-        />
-      </svg>
-    </div>
-  </button>
+  
 </div>
 
               </div>
