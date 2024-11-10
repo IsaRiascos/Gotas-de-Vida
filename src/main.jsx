@@ -11,7 +11,7 @@ import Acidificacion from "./pages/acificacion/Acidficacion";
 import Perfil from "./pages/perfil/Perfil";
 import Scena from "./pages/Conta/scena-conta/Scena";
 import Causas from "./pages/Conta/Causas/causas";
-import ScenaCausas from "./pages/Conta/Causas/scena-causas/ScenaCausa";
+import ScenaCausa from "./pages/Conta/Causas/scena-causas/ScenaCausa";
 
 
 
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   {path: "/perfil", element: <Perfil/>, },
   {path: "/Scena", element: <Scena/>, },
   {path: "/causas", element: <Causas/>, },
-  {path: "/ScenaCausa", element: <ScenaCausas/>, },
+  {path: "/ScenaCausa", element: <ScenaCausa/>, },
 
 
   
