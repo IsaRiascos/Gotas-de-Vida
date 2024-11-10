@@ -60,9 +60,7 @@ const Causas = () => {
                   <img className="Imagen-reducida" src="https://forbescentroamerica.com/_next/image?url=https%3A%2F%2Fcdn.forbescentroamerica.com%2F2020%2F08%2FIsla-Mauricio-buque-cisterna-768x432-1.jpg%3Fv%3D768432&w=1080&q=75" /></p2>
             </div>
       </div>
-        <div id = "scenaa">
-          <ScenaCausa />
-        </div>
+      
       </div>
 
         
