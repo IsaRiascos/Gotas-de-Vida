@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import Earth from "../../models-3d/earth";
+import Earth from "../../models-3d/Earth";
 import "./ScenaCausas.css";
 
 const ScenaCausas = () => {
