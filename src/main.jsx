@@ -10,6 +10,7 @@ import Escazes from "./pages/escazes/Escazes"
 import Acidificacion from "./pages/acificacion/Acidficacion";
 import Perfil from "./pages/perfil/Perfil";
 import Scena from "./pages/Conta/scena-conta/Scena";
+import Causas from "./pages/Conta/Causas/causas";
 
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
   {path: "/acidificacion", element: <Acidificacion/>},
   {path: "/perfil", element: <Perfil/>, },
   {path: "/Scena", element: <Scena/>, },
+  {path: "/causas", element: <Causas/>, },
 
 
   

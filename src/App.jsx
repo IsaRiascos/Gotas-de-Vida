@@ -2,6 +2,9 @@
 
 //import appFirebase from './credenciales'
 //import {getAuth, onAuthStateChanged} from 'firebase/auth'
+
+
+
 //const auth = getAuth(appFirebase)
 
 
@@ -9,6 +12,8 @@
 //import Home from './components/Home'
 
 //import './App.css'
+
+
 
 //function App() {
 

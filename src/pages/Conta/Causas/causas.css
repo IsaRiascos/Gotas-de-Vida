@@ -1,0 +1,30 @@
+/* Estilo del contenedor principal */
+.container-causas {
+    font-family: 'Lucids Console',monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px ;
+    width: 100%;
+    padding: 43px;
+    margin: auto;
+    margin-top: 50px;
+    background-color:       #d9b5a050;
+    
+}
+
+.container2-causas{
+    display: flex;
+    max-width: 800px;
+    margin: 50px;
+    margin-top: 0px;
+    
+}
+
+
+
+.Imagen-reducida{
+    display: block;
+    margin: 0 auto;
+    max-width: 400px; /* Ajusta el tamaño máximo según lo que necesites */
+    height: auto; /* Mantén la proporción de la imagen */
+}
