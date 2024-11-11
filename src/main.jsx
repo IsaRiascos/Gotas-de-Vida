@@ -16,6 +16,7 @@ import Causas from "./pages/Conta/Causas/causas";
 
 
 
+
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   {path: "/acidificacion", element: <Acidificacion/>},
   {path: "/perfil", element: <Perfil/>, },
   {path: "/Scena", element: <Scena/>, },
-  {path: "/Causas", element: <Causas/>, },
+  {path: "/causas", element: <Causas/>, },
   {path: "/ScenaCausa", element: <ScenaCausa/>, },
 
 
