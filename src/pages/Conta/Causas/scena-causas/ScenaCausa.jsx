@@ -10,7 +10,7 @@ const ScenaCausas = () => {
                 <Canvas
                     camera={{
                         position: [0, 0, 10], // Posición inicial de la cámara
-                        fov: 20, // Campo de visión
+                        fov: 40, // Campo de visión
                     }}
                 >
                     <OrbitControls autoRotate={true} />
@@ -32,7 +32,7 @@ const ScenaCausas = () => {
                         color="#ffffff"
                     />
 
-                    <Earth />
+                    <Earth position= {[0,1,0]}/>
                 </Canvas>
             </div>
         </>

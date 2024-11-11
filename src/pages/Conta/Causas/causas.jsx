@@ -17,6 +17,10 @@ const Causas = () => {
           <h1>
             Causas de la contaminacion
           </h1>
+          <p2>
+          ♦ Las causas de la contaminacion del agua pueden ser muchas siendo estas ocasionadas por diferentes factores, siendo presentadas
+          algunas de estas causas 
+          </p2>
             <p1>
               1.Calentamiento Global:
             </p1>
