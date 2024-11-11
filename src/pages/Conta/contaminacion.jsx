@@ -39,7 +39,7 @@ const contaminacion = () => {
           </div>
         </div>
         <div className="buttonContainer">
-    <a href="/Causas" className="buttonLink">Causas</a>
+    <a href="/causas" className="buttonLink">Causas</a>
   
 </div>
 
