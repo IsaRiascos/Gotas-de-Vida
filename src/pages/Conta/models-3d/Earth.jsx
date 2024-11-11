@@ -1,19 +1,47 @@
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, useKeyboardControls } from "@react-three/drei";
 import { useRef, useState, clickedObject } from "react";
 import { Html } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+
 
 const earth = (props) => {
   // Desestructuración del objeto retornado por useGLTF, que contiene los nodos y materiales del modelo GLTF
   const { nodes, materials } = useGLTF("models3d/earth_cartoon.glb");
   const [clickedObject, setclickedObjects] = useState(null);
+  const [sub, get] = useKeyboardControls();
+  const earthRef = useRef(null);
   const group = useRef();
+  
+
+  const handleEarth = (e) => {
+    e.stopPropagation()
+    console.log(e);
+  };
 
   const handleClick = (e, objectName) => {
     e.stopPropagation();
     const position = e.object.position;
-
     setclickedObjects({ name: objectName, position });
   };
+
+    
+
+  useFrame((state, delta) => {
+    const { forward } = get();  
+    const { backward } = get();  
+
+    if(forward){
+      earthRef.current.position.x = Math.cos(state.clock.elapsedTime * 2)
+      earthRef.current.position.y += 1 * delta;
+    }else if(backward){
+      earthRef.current.position.x = Math.cos(state.clock.elapsedTime * 2)
+      earthRef.current.position.y += -1 * delta;
+    }
+    
+    
+    const pressed = get().back
+  });
+
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -24,16 +52,18 @@ const earth = (props) => {
               <group name="Oceano_1">
                 <mesh
                   name="Object_4"
+                  ref={earthRef}
                   geometry={nodes.Object_4.geometry}
                   material={materials.agua}
-                  onClick={() => alert("Recuerda una accion tuya puede salvar litros de agua.")}
-                />
+                  onClick={(e) => handleEarth(e)}
+                  />
                 <group name="tierra_0" scale={0.996}>
                   <mesh
                     name="Object_6"
                     geometry={nodes.Object_6.geometry}
                     material={materials.tierra}
-                    onClick={(e) => handleClick(e, "Objects_0")}
+                    onClick={(e) => handleClick(e, 'object_6')}
+                    
                     
                     />
                 </group>
@@ -41,7 +71,7 @@ const earth = (props) => {
                     <Html
                     position={[
                         clickedObject.position.x,
-                        clickedObject.position.y +2,
+                        clickedObject.position.y +1.5,                    
                         clickedObject.position.z,
                     ]}
                     center
@@ -60,7 +90,7 @@ const earth = (props) => {
                         
                       }}
                     >
-                        <p>Cada accion tuya cuenta </p>
+                        <p>Reciclar ayudara a un mañana mejor  </p>
                         
                     </div>
                     </Html>
@@ -146,12 +176,13 @@ const earth = (props) => {
                 position={[-0.409, -1.016, 0.477]}
                 rotation={[-0.438, 0, 2.792]}
                 scale={0.018}
-              >
+                >
                 <mesh
                   name="Object_42"
                   geometry={nodes.Object_42.geometry}
                   material={materials["Atlas.2"]}
-                />
+                  onClick={() => alert("Recuerda una accion tuya puede salvar litros de agua")}
+                  />
                 <group name="avion004_25">
                   <mesh
                     name="Object_44"

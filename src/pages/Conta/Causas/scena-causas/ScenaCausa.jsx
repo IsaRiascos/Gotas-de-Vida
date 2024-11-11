@@ -1,11 +1,20 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { KeyboardControls, OrbitControls, useGLTF } from "@react-three/drei";
+import Controls from "../Controls";
 import Earth from "../../models-3d/Earth";
 import "./ScenaCausas.css";
+import { useMemo } from "react";
 
 const ScenaCausas = () => {
+    const map = useMemo(
+        () =>[
+            {name:"forward",keys: ["ArrowUp", "KeyW"],},
+            { name: "backward", keys: ["ArrowDown", "KeyS"] },
+        ],[]
+    )
     return (
         <>
+        <KeyboardControls map={map}>
             <div className="containerCausas-3d">
                 <Canvas
                     camera={{
@@ -33,8 +42,10 @@ const ScenaCausas = () => {
                     />
 
                     <Earth position= {[0,1,0]}/>
+                    <Controls />
                 </Canvas>
             </div>
+        </KeyboardControls>
         </>
     );
 };

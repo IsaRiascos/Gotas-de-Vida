@@ -32,7 +32,7 @@ const Scena = () => {
           {/* Luz direccional que ilumina desde una posición específica con una intensidad alta */}
           <directionalLight 
           position={[5, 5, 5]} 
-          intensity={3} 
+          intensity={5} 
           
           castShadow
           shadow-mapSize-width={1024}
