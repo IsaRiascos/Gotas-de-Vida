@@ -19,7 +19,7 @@ const Home = () => {
         </p>
         <p1>
             1. Contaminacion de agua
-        </p1>
+        </p1    >
         
         <p1>
             2. Escazes de agua 

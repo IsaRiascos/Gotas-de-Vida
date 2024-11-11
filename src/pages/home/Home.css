@@ -17,24 +17,35 @@
 }
 p{
     font-family: 'Lucids Console',monospace;
-    margin: 2%;
+    margin: 5%;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.5em;
     color:#000000
     
+    
 }
 
 p1{
-    margin: 5%;
+    margin: 3%;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 1.3em;
+    text-align: left;
+    font-size: 1.5em;
     color:blue;
     font-weight: bold;
     font-family: 'Lucids Console',monospace;}
+
+p2{
+        margin: 1%;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 1.5em;
+        color:rgb(10, 10, 10);
+        
+        font-family: 'Lucids Console',monospace;}
 
 
 

@@ -37,8 +37,12 @@ const Header = () => {
             <li>
               {/* Link a la página de acidificacion */}
               <Link to="/perfil">Perfil  </Link>
+
+
               
             </li>
+
+
       
             
           </ul>

@@ -19,7 +19,10 @@ import Header from "../components/Header/Header";
 // Importamos React para la definición de componentes funcionales
 import React from "react";
 
+
 // Definimos el componente funcional Login, que será exportado para ser usado en otras partes de la aplicación
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
+
 export default function Login() {
   // Usamos el hook useAuthStore para obtener el estado del usuario y las funciones relacionadas con la autenticación
   const { user, loginGoogleWithPopUp, observeAuthState, logout } =
@@ -63,6 +66,8 @@ export default function Login() {
   }, [user, navigate]); // Dependencias: el efecto se ejecutará cuando user o navigate cambien
 
   return (
+    
+    
     <div className="container-login">
       {" "}
       {/* Contenedor principal con clase CSS */}
@@ -80,6 +85,7 @@ export default function Login() {
             Hola {user.displayName}, si deseas cerrar sesión, por favor presiona
             el botón verde
           </p>
+          
           <button className="button-logout" onClick={handleLogout}>
             {" "}
             {/* Botón para cerrar sesión */}
@@ -100,37 +106,39 @@ export default function Login() {
         // Si no hay un usuario autenticado
         <div className="container">
 
-          <div className="additional-container">
+          <div className="-container">
             <h1>Bienvenidos a Gotas de vida </h1>
             <p>
               En cada gota de agua, hay una historia de vida
             </p>
+
           </div>
           
           <div className="login-container">
+
             <h1 className="heading">Iniciar sesion</h1>
-            <form className="form" action="">
-              <input
-                placeholder="Correo"
-                id="email"
-                name="email"
-                type="email"
-                className="input"
-                required
-              />
-              <input
-                placeholder="Contraseña"
-                id="password"
-                name="password"
-                type="password"
-                className="input"
-                required
-              />
-              <span className="forgot-password">
-                <a href="#">Forgot Password ?</a>
-              </span>
-              <input value="Iniciar" type="submit" className="login-button" />
-            </form>
+                <form className="form" action="">
+                  <input
+                    placeholder="Correo"
+                    id="email"
+                    name="email"
+                    type="email"
+                    className="input"
+                    required
+                  />
+                  <input
+                    placeholder="Contraseña"
+                    id="password"
+                    name="password"
+                    type="password"
+                    className="input"
+                    required
+                  />
+                  <span className="forgot-password">
+                    <a href="#">Forgot Password ?</a>
+                  </span>
+                  <input value="Iniciar" type="submit" className="login-button" />
+                </form>
             <div className="social-account-container">
               <span className="title">Inicia sesion con</span>
               <div className="social-accounts">
@@ -161,9 +169,14 @@ export default function Login() {
             </span>
             </div>
           
+          
         </div>
         
       )}
+
+      
+
+      
       
   
     </div>
