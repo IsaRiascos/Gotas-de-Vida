@@ -2,6 +2,8 @@ import Header from "../components/Header/Header";
 import "./contaminacion.css";
 import Scena from "./scena-conta/Scena";
 
+import { Link } from "react-router-dom";
+
 const contaminacion = () => {
   return (
     <>
@@ -39,7 +41,7 @@ const contaminacion = () => {
           </div>
         </div>
         <div className="buttonContainer">
-    <a href="/causas" className="buttonLink">Causas</a>
+    <Link to="/causas">Causas</Link>
   
 </div>
 
