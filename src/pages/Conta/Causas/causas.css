@@ -21,7 +21,9 @@
 }
 
 
-
+.p {
+    color:  #000000;
+}
 .Imagen-reducida{
     display: block;
     margin: 0 auto;
