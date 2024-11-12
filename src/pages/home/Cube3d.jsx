@@ -11,7 +11,7 @@ const Cube3D = () => {
       color: "bg-blue-500"
     },
     {
-      content: "¿Sabías que...?",
+      title: "¿Sabías que...?",
       content: "Estos problemas afectan tanto a los ecosistemas acuáticos como a las poblaciones humanas que dependen de este recurso esencial. Siendo este impactado por diversas actividades humanas como los son las actividades industriales, el uso excesivo de pesticidas y fertilizanntes la gestion inadecuada de residuos y los procesos agricolas por lo tanto, cada dia que pasa, mas fuentes de agua se encuentran contaminadas.",
       color: "bg-blue-400"
     },
