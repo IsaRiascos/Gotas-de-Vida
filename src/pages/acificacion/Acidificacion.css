@@ -15,3 +15,74 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
+.canvas-container {
+    margin-bottom: 20px; /* Espacio después del modelo 3D */
+}
+
+.view-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+}
+
+.extra-content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Lucids Console', monospace;
+    text-align: center;
+    color: #1A4AD9;
+}
+
+.content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.text-container {
+    flex: 2; /* El texto ocupará más espacio */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.image-container {
+    flex: 1; /* La imagen ocupará menos espacio */
+}
+
+.Imagen-reducida {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+
+/* Evitar que el texto y las imágenes se desborden en pantallas pequeñas */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .text-container, .image-container {
+        margin-bottom: 20px; 
+    }
+}
