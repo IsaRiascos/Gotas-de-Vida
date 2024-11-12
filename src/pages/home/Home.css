@@ -15,26 +15,39 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-p{
-    font-family: 'Lucids Console',monospace;
+
+/* Estilo para el párrafo */
+p {
+    font-family: 'Lucida Console', monospace;
     margin: 2%;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 1.5em;
-    color:#000000
-    
+    color: #000000;
 }
 
-p1{
+p1 {
     margin: 5%;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 1.3em;
-    color:blue;
+    color: blue;
     font-weight: bold;
-    font-family: 'Lucids Console',monospace;}
+    font-family: 'Lucida Console', monospace;
+}
 
+/* Estilo para el cubo y su contenedor */
+.cube-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el cubo al principio */
+    height: 80vh; /* Ajusta la altura para que el cubo quede más centrado */
+    margin-top: 150px; /* Mueve el cubo más hacia abajo */
+    margin-bottom: 100px; /* Asegura que el cubo tenga un margen inferior */
+}
 
-
+/* Asegura que el contenido se vea bien al centro */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

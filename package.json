@@ -11,14 +11,17 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@react-three/drei": "^9.114.5",
+    "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
+    "debug": "^4.3.1",
     "firebase": "^10.14.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
     "styled-components": "^6.1.13",
-    "vercel": "^37.12.1",
+    "three": "^0.170.0",
+    "uuid": "^11.0.2",
+    "vercel": "^32.3.0",
     "zustand": "^5.0.0"
   },
   "devDependencies": {

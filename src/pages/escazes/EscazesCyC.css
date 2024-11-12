@@ -1,0 +1,62 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilo del contenedor principal */
+.container-escazesCyC {
+    color: #000000;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #d2fbf5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.canvas-container {
+  background-color: #1675f2;
+  width: 80vw; /* 80% del ancho de la ventana */
+  height: 60vh; /* 60% de la altura de la ventana */
+  margin: 0 auto;
+  border: 2px solid #ccc;
+
+}
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .button1 {
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button1:hover {
+    background-color: #5a6268;
+  }
