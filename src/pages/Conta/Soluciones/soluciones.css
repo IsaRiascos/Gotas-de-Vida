@@ -1,0 +1,22 @@
+.container-solucione{
+    font-family: 'Lucids Console',monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px ;
+    width: 100%;
+    padding: 43px;
+    margin: 2px;
+    margin-top: 50px;
+    background-color:       #d9b5a050;
+   
+
+    
+}
+.containers{
+    display: flex;
+    max-width: 800px;
+    margin: 50px;
+    margin-top: 0px;
+    
+}
+

@@ -42,7 +42,7 @@ const Scena = () => {
 
           {/* Cielo y sol con ajustes personalizados */}
           <Sky
-            sunPosition={[0, 0, -1]} // Coloca el sol debajo del horizonte
+            sunPosition={[0, 0,-1]} // Coloca el sol debajo del horizonte
             inclination={0.2} // Ajusta la inclinación para simular el atardecer
             azimuth={180} // Ajusta el ángulo de azimut para cambiar la dirección de la luz
             mieCoefficient={0.005} // Ajusta la dispersión atmosférica

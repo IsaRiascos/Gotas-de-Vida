@@ -1,9 +1,21 @@
 
-import { useGLTF } from '@react-three/drei'
+import { useGLTF,useKeyboardControls } from '@react-three/drei'
+import { useState, useRef } from 'react';
 
 const Ocean = (props) => {
     // Desestructuración del objeto retornado por useGLTF, que contiene los nodos y materiales del modelo GLTF
     const { nodes, materials } = useGLTF("models3d/Oceanshi.glb");
+    const [clickedObject, setclickedObjects] = useState(null);
+  
+  
+  const group = useRef();
+  
+
+  const handleClick = (e, objectName) => {
+    e.stopPropagation();
+    const position = e.object.position;
+    setclickedObjects({ name: objectName, position });
+  };
     return (
       <group {...props} dispose={null}>
         <group name="Scene">
@@ -66,6 +78,7 @@ const Ocean = (props) => {
                     geometry={nodes.Object_4001.geometry}
                     material={materials.material_0}
                     position={[-3.101, -0.437, 5.634]}
+                    
                   />
                   <mesh
                     name="Object_4005"
@@ -75,11 +88,15 @@ const Ocean = (props) => {
                     material={materials.material_0}
                     position={[1.155, 3.354, 5.891]}
                     scale={1.54}
+                    
                   />
                 </group>
+                
               </group>
             </group>
+           
           </group>
+          
           <group
             name="Huevos"
             position={[13.046, 5.289, -3.92]}
@@ -138,6 +155,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_1.geometry}
               material={materials['Urchent_Body/Material']}
+              
             />
             <mesh
               name="ocean_2"
@@ -152,6 +170,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_3.geometry}
               material={materials['Red_Feelers/Material']}
+              
             />
             <mesh
               name="ocean_4"
@@ -166,6 +185,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_5.geometry}
               material={materials['Middel_Bubbles/Material']}
+              
             />
             <mesh
               name="ocean_6"
@@ -180,6 +200,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_7.geometry}
               material={materials['Water/Material']}
+              
             />
             <mesh
               name="ocean_8"
@@ -201,6 +222,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_10.geometry}
               material={materials['wire_174186203/Material']}
+              
             />
             <mesh
               name="ocean_11"
@@ -208,6 +230,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_11.geometry}
               material={materials['Coral_Rock1/Material']}
+             
             />
             <mesh
               name="ocean_12"
@@ -215,6 +238,7 @@ const Ocean = (props) => {
               receiveShadow
               geometry={nodes.ocean_12.geometry}
               material={materials['Coral_Rock2/Material']}
+              
             />
           </group>
           <group name="Tarro" position={[19.774, 4.216, -7.112]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -256,6 +280,7 @@ const Ocean = (props) => {
                   geometry={nodes.defaultMaterial001.geometry}
                   material={materials.DefaultMaterial}
                   position={[-0.107, 9.617, -25.152]}
+                  onClick={() => alert("Sabias que un plastico puede tardar hasta 500 años en degradarse, toma conciencia.")}
                 />
               </group>
               <group name="Cylinder001">
@@ -266,6 +291,8 @@ const Ocean = (props) => {
                   geometry={nodes.defaultMaterial.geometry}
                   material={materials.DefaultMaterial}
                   position={[4.058, 8.476, -2.8]}
+                  onClick={() => alert("El cambio empieza por ti")}
+                  
                 />
               </group>
             </group>
@@ -308,6 +335,7 @@ const Ocean = (props) => {
                   geometry={nodes.Object_4002.geometry}
                   material={materials['Plastic_Cup.001']}
                   position={[-8.08, 2.806, -2.79]}
+                  onClick={() => alert("Gota a gota, el agua se agota. ")}
                 />
               </group>
             </group>

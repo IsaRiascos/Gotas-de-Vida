@@ -11,15 +11,15 @@ const Text = () => {
         position={[10,-25,0]}
         style={{
             color: "white",
-            fontSize: "18pt"
+            fontSize: "25pt"
         }}>
             
             
-            <h2>
+            <h3>
             Cada gota contaminada
             es 
             una vida en riesgo.
-            </h2>
+            </h3>
     
         </Html>
        

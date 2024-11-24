@@ -3,7 +3,7 @@
     font-family: 'Lucids Console',monospace;
     display: flex;
     flex-direction: column;
-    max-width: 1200px ;
+    max-width: 1000px ;
     width: 100%;
     padding: 43px;
     margin: auto;
@@ -21,12 +21,50 @@
 }
 
 
-p2 {
-    color:  #000000;
+p2  {
+    color:  #070707;
+    font-size: 1.5em;
+    margin: 12px;
 }
+
+
 .Imagen-reducida{
     display: block;
-    margin: 0 auto;
+    margin:auto;
     max-width: 400px; /* Ajusta el tamaño máximo según lo que necesites */
     height: auto; /* Mantén la proporción de la imagen */
+;
 }
+
+.buutton {
+    background-color: #97f3fb;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 15em;
+    border-radius: 1rem;
+    color: rgb(42, 41, 42);
+    box-shadow: 0 0.4rem #89cdecad;
+    cursor: pointer;
+    position: absolute;
+    top: 2600px;
+    left: 1000px;
+    
+    }
+
+    .buutton:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+    }
+
+    .buutton:hover:not(:disabled) {
+    background: #74e0f8;
+    color: rgb(9, 7, 7);
+    text-shadow: 0 0.1rem #bcb4b4;
+    }
+
+    .buutton:disabled {
+    cursor: auto;
+    color: grey;
+    }

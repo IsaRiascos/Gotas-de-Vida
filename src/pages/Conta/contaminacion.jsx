@@ -1,10 +1,16 @@
 import Header from "../components/Header/Header";
 import "./contaminacion.css";
 import Scena from "./scena-conta/Scena";
-
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const contaminacion = () => {
+  const navigate = useNavigate();
+  const handleNextPage = () => {
+    navigate('/causas');
+  };
+
+  
+  
   return (
     <>
       <Header />
@@ -41,7 +47,12 @@ const contaminacion = () => {
           </div>
         </div>
         <div className="buttonContainer">
-    <Link to="/causas">Causas</Link>
+        
+
+          <button className="buttoon" onClick={handleNextPage}>Siguiente Pagina → 
+          </button>
+      
+    
   
 </div>
 

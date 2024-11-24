@@ -11,13 +11,12 @@ import EscazesCyC from "./pages/escazes/EscazesCyC";
 import Acidificacion from "./pages/acificacion/Acidficacion";
 import Perfil from "./pages/perfil/Perfil";
 import Scena from "./pages/Conta/scena-conta/Scena";
-
 import ScenaCausa from "./pages/Conta/Causas/scena-causas/ScenaCausa";
 import Causas from "./pages/Conta/Causas/causas";
-
-
-
-
+import Consecuencias from "./pages/Conta/Consecuencias/consecuencias";
+import Bienvenida from "./pages/Conta/Bienvenida/bienvenida"
+import Soluciones from "./pages/Conta/Soluciones/soluciones"
+import scenaSolucion from "./pages/Conta/Soluciones/scenasolucion/scenaSolucion";
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
@@ -32,12 +31,14 @@ const router = createBrowserRouter([
   {path: "/Scena", element: <Scena/>, },
   {path: "/causas", element: <Causas/>, },
   {path: "/ScenaCausa", element: <ScenaCausa/>, },
-
-
+  {path: "/consecuencias", element: <Consecuencias/>, },
+  {path: "/Bienvenida", element: <Bienvenida/>, },
+  {path: "/soluciones", element: <Soluciones/>, },
+  {path: "/scenaSolucion", element: <scenaSolucion/>, },
   
-  
-  
-
+ 
+ 
+ 
   
 
   

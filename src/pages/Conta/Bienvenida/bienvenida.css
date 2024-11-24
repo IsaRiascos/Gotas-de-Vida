@@ -1,0 +1,45 @@
+.container-bienvenida3d{
+    width: 1470px;
+    height: 800px;
+    display: flex;
+    margin-top: auto;
+    margin: auto;
+    position:absolute;
+    
+    background-color: lightgrey;
+
+}
+
+
+.buutton {
+    background-color: #09daed;
+    border: none;
+    padding: 1rem;
+    font-size: 12px;
+    width: 5em;
+    border-radius: 1rem;
+    color: rgb(42, 41, 42);
+    box-shadow: 0 0.4rem #89cdecad;
+    cursor: pointer;
+    position: absolute;
+    top: 450px;
+    left: 1200px;
+    
+    }
+
+    .buutton:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+    }
+
+    .buutton:hover:not(:disabled) {
+    background: #74e0f8;
+    color: rgb(9, 7, 7);
+    text-shadow: 0 0.1rem #bcb4b4;
+    }
+
+    .buutton:disabled {
+    cursor: auto;
+    color: grey;
+    }

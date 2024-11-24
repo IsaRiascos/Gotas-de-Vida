@@ -25,14 +25,7 @@ p {
     color: #000000;
 }
 
-p1 {
-    margin: 5%;
-    text-align: center;
-    font-size: 1.3em;
-    color: blue;
-    font-weight: bold;
-    font-family: 'Lucida Console', monospace;
-}
+
 
 /* Estilo para el cubo y su contenedor */
 .cube-container {
