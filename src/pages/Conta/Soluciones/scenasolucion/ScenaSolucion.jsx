@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber"
 import Trash from "../../models-3d/Trash"
 import { OrbitControls, Sparkles } from "@react-three/drei"
-import "./ScenaSolucion.css"
+import "./ScenaSoluciones.css"
 import Bamboo from "../../models-3d/Bamboo"
 import Panel from "../../models-3d/Panel"
 

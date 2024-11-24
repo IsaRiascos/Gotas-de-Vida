@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import "./soluciones.css";
-import ScenaSolucion from "./scenasolucion/scenaSolucion";
+import ScenaSolucion from "./scenasolucion/ScenaSolucion";
 const soluciones = () => {
     return (
         <>

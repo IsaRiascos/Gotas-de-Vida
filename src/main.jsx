@@ -16,8 +16,7 @@ import Causas from "./pages/Conta/Causas/causas";
 import Consecuencias from "./pages/Conta/Consecuencias/consecuencias";
 import Bienvenida from "./pages/Conta/Bienvenida/bienvenida"
 import Soluciones from "./pages/Conta/Soluciones/soluciones"
-import ScenaSolucion from "./pages/Conta/Soluciones/scenasolucion/scenaSolucion";
-
+import ScenaSolucion from "./pages/Conta/Soluciones/scenasolucion/ScenaSolucion"
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
