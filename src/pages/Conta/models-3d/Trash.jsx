@@ -1,8 +1,8 @@
 import { useGLTF } from "@react-three/drei"
 
-
 const Trash = (props) =>{
     const { nodes, materials } = useGLTF("models3d/trash.glb")
+    
         return (
             <group {...props} dispose={null}>
             <group name="Sketchfab_Scene">
@@ -14,6 +14,7 @@ const Trash = (props) =>{
                         name="Object_4"
                         geometry={nodes.Object_4.geometry}
                         material={materials.Material}
+                        onClick={() => alert("Reciclar no es solo un acto, es una inversión en el futuro del planeta.")}
                         />
                     </group>
                     <group name="Cubo001_1" position={[-0.102, -0.114, 0.136]} scale={1.005}>
@@ -21,6 +22,7 @@ const Trash = (props) =>{
                         name="Object_6"
                         geometry={nodes.Object_6.geometry}
                         material={materials.Base}
+            
                         />
                     </group>
                     </group>

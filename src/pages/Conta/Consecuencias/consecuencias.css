@@ -12,6 +12,7 @@
    
 }
 
+
 .container-2{
     font-family: 'Lucids Console',monospace;
     display: flex;
@@ -43,10 +44,25 @@
     flex-direction: column;
     max-width: 400px ;
     width: 100%;
-    padding: 55px;
-    margin: 30px;
+    padding: 20px;
+    margin: auto;
     margin-top: -2600px;
     background-color:       #fffbf950;
+    margin-left: 105    0px;
+    
+
+}
+
+.container-Imagen{
+    font-family: 'Lucids Console',monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px ;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 500px;
+    
     margin-left: 1000px;
     
 
@@ -70,10 +86,42 @@ p1{
 
 .Imagenn-reducida{
     display: block;
-    margin:10px;
+    margin:60px;
     max-width: 350px; /* Ajusta el tamaño máximo según lo que necesites */
     height: auto; /* Mantén la proporción de la imagen */
     margin-left: -40px;
+    margin-top:-50px;
   
 }
+
+.Buttoon {
+    background-color: #9af1f7;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 15em;
+    border-radius: 1rem;
+    color: rgb(42, 41, 42);
+    box-shadow: 0 0.4rem #c2f8fead;
+    cursor: pointer;
+    margin-left: 70em;
+    margin-top: 12em;
+    }
+  
+    .Buttoon:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+    }
+  
+    .Buttoon:hover:not(:disabled) {
+    background: rgba(8, 195, 247, 0.46);
+    color: rgb(10, 10, 10);
+    text-shadow: 0 0.1rem #bcb4b4;
+    }
+  
+    .Buttoon:disabled {
+    cursor: auto;
+    color: grey;
+    }
 

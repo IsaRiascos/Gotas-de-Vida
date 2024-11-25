@@ -6,6 +6,7 @@ import "./ScenaCausas.css";
 import { useMemo } from "react";
 import TextC from "./TextC";
 import Planet from "../../models-3d/Planet";
+import Bags from "../../models-3d/Bags";
 
 const ScenaCausas = () => {
     const map = useMemo(
@@ -73,6 +74,7 @@ const ScenaCausas = () => {
                     <Planet position= {[-0.5,3.6,0]}/>
                     <Controls />
                     <TextC/>
+                    
                 </Canvas>
             </div>
         </KeyboardControls>

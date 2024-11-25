@@ -16,7 +16,7 @@ const Ball = (props) => {
   }, []);
 
   return (
-    <RigidBody ref={ballRef} type="dynamic" friction={0} restitution={0.3   } >
+    <RigidBody ref={ballRef} type="dynamic" friction={0.2} restitution={0.9} >
       <group {...props} dispose={null}>
         <group name="Scene">
           <group

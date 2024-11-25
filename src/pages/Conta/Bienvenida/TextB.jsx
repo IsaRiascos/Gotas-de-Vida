@@ -23,23 +23,25 @@ const TextB = () => {
                 </Text3D>
             </Center>
 
-            {/* <Html
+            
+
+            <Html
         center
         distanceFactor={30}
         transform
-        position={[-9,5,20]}
+        position={[35,8,25]}
         style={{
-            color: "white",
-            fontSize: "48px"
+            color: "black",
+            fontSize: "30px"
         }}>
         
             <h3>
-        Tocame
+                Haz Click ↓
             </h3>
            
             
-        </Html> */}
-        
+        </Html>
+         
         </>        
 
     

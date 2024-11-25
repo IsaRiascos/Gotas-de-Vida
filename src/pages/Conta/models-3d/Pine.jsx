@@ -15,7 +15,7 @@
                       geometry={nodes.PineTree_001_PineTree_001_0.geometry}
                       material={materials.PineTree_001}
                       position={[-800, -30, -300]}
-                      scale={0.07}
+                      scale={0.08}
                     />
                   </group>
                 </group>

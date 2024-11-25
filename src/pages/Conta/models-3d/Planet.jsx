@@ -15,6 +15,7 @@ const Planet = (props) =>{
                 material={materials.lambert3}
                 position={[-5, 0, 0]}
                 scale={9.99}
+                onPointerEnter={() => alert("¡Cuidar el agua nunca es tarde, empieza hoy! 💧")}
               />
             </group>
             <group position={[0, 1.602, 0]}>
@@ -34,6 +35,7 @@ const Planet = (props) =>{
                 receiveShadow
                 geometry={nodes.treelarge_bark1_0.geometry}
                 material={materials.bark1}
+                onPointerEnter={() => alert("🌳 Cada árbol cuenta, salva uno hoy.")}
               />
               <mesh
                 castShadow

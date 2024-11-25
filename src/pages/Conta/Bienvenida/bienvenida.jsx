@@ -10,6 +10,7 @@ import Pine from "../models-3d/Pine";
 import TextB from "./TextB";
 import Ball from "../models-3d/Ball";
 import { Sparkles } from "@react-three/drei";
+import Bags from "../models-3d/Bags";
 
 
 const bienvenida= () =>{
@@ -29,11 +30,11 @@ const bienvenida= () =>{
         <Controls/>
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 10, 10]} intensity={2} castShadow />
-        <Physics gravity={[0, -10, 0]}  >
+        <Physics gravity={[0, -9.81, 0]}  >
         <Floor name="floor" rotation-x={-Math.PI * 0.5} receiveShadow 
         position={[0,-3,0]}
         />
-        <Pine name="pine" position={[32, 30,300  ]} castShadowposition/>
+        <Pine name="pine" position={[32, 25,290  ]} castShadowposition/>
         <Ball name="ball" position={[-5, 2, 10]} castShadow />
         
         
@@ -41,6 +42,7 @@ const bienvenida= () =>{
         
         <Cat position={[20,0,0]}/>
         <TextB/>
+        <Bags position={[30,-4,30]}/>
        
 
         </Physics>
@@ -50,7 +52,7 @@ const bienvenida= () =>{
                 count={100} // Número de chispas
                 size={30} // Tamaño de cada chispa
                 fade={true} // Desactiva el efecto de desvanecimiento en las chispas
-                speed={1} // Velocidad del movimiento de las chispas
+                speed={2} // Velocidad del movimiento de las chispas
                 scale={50} // Escala de la dispersión de las chispas en la escena
                 />
         

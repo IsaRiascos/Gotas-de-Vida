@@ -59,7 +59,7 @@ const Causas = () => {
       </div>
         <div id = "scenaa">
           <ScenaCausa />
-          <button className="buutton" onClick={handleNextPage}>Siguiente Pagina → 
+          <button className="Buutton" onClick={handleNextPage}>Siguiente Pagina → 
           </button>
         </div>
 

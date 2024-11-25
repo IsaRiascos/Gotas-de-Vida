@@ -17,6 +17,7 @@ import Consecuencias from "./pages/Conta/Consecuencias/consecuencias";
 import Bienvenida from "./pages/Conta/Bienvenida/bienvenida"
 import Soluciones from "./pages/Conta/Soluciones/soluciones"
 import ScenaSolucion from "./pages/Conta/Soluciones/scenasolucion/ScenaSolucion"
+import ScenaConsecuencias from "./pages/Conta/Consecuencias/scenaconsecuencias/ScenaConsecuencias";
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
   {path: "/Bienvenida", element: <Bienvenida/>, },
   {path: "/soluciones", element: <Soluciones/>, },
   {path: "/ScenaSolucion", element: <ScenaSolucion/>, },
+  {path: "/ScenaConsecuencias", element: <ScenaConsecuencias/>, },
   
   
 ]);
