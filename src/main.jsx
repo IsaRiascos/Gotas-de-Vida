@@ -38,7 +38,7 @@ const router = createBrowserRouter([
   {path: "/soluciones", element: <Soluciones/>, },
   {path: "/ScenaSolucion", element: <ScenaSolucion/>, },
   {path: "/ScenaConsecuencias", element: <ScenaConsecuencias/>, },
-  {path: "/quizz", element: <QuizComponent/>, },
+  {path: "/Guia", element: <QuizComponent/>, },
   {path: "/Entran", element: <Entrance/>, },
   {path: "/Mejora", element: <Mejoras/>, },
   
