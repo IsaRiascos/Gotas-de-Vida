@@ -13,10 +13,12 @@
   "dependencies": {
     "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
+    "@react-three/postprocessing": "^2.16.3",
     "@react-three/rapier": "^1.5.0",
     "debug": "^4.3.1",
     "firebase": "^10.14.1",
     "gensync": "^1.0.0-beta.2",
+    "postprocessing": "^6.36.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",

@@ -1,15 +1,8 @@
-
-
 .container-3dC {
     width: 600px;
     height: 500px;
     display: flex;
     position:absolute;
     margin-top: auto;
-    margin-left: 260px
-    ;
-   
-    
-    
-    
+    margin-left: 260px;
 }

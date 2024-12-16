@@ -33,20 +33,10 @@ const Header = () => {
               {/* Link a la página de acidificacion */}
               <Link to="/acidificacion">Acidificacion de los oceanos  </Link>
             </li>
-
             <li>
               {/* Link a la página de acidificacion */}
-
-              <Link to="/perfil">Perfil  </Link>
-
-
-              
+              <Link to="/Guia">Evaluacion  </Link>
             </li>
-           
-
-
-      
-            
           </ul>
         </nav>
       </header>

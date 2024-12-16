@@ -1,0 +1,54 @@
+.guia{
+    font-family: 'Lucids Console',monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px ;
+    height: 600px;
+    width: 100%;
+    padding: 3px;
+    margin: auto;
+    margin-top: 50px;
+    background-color:       #b4f0ef50;
+   
+}
+
+.p1 {
+    font-family: 'Lucida Console', monospace;
+    margin: auto;
+    text-align: left;
+    font-size: 1.4em;
+    color: #000000;
+    margin: 2px;
+    
+}
+
+.Buuttoon {
+    background-color:#8de0f7;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 6em;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0.4rem #2f99db;
+    cursor: pointer;
+    margin: auto;
+    }
+  
+    .Buuttoon:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+    }
+  
+    .Buuttoon:hover:not(:disabled) {
+    background: rgb(76, 216, 255);
+    color: rgb(10, 10, 10);
+    text-shadow: 0 0.1rem #bcb4b4;
+    }
+  
+    .Buuttoon:disabled {
+    cursor: auto;
+    color: grey;
+    }
+

@@ -1,9 +1,8 @@
-        .containerCausas-3d {
-            width: 600px;
-            height: 2568px;
-            display: flex;
-            margin-top: 50px;
-            position:absolute;
-            
-        }
+.containerCausas-3d {
+    width: 600px;
+    height: 2568px;
+    display: flex;
+    margin-top: 50px;
+    position: absolute;
 
+}

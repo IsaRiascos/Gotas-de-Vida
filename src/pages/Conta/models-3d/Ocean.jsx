@@ -1,21 +1,13 @@
 
 import { useGLTF,useKeyboardControls } from '@react-three/drei'
 import { useState, useRef } from 'react';
+import { useEffect } from 'react';
 
 const Ocean = (props) => {
     // Desestructuración del objeto retornado por useGLTF, que contiene los nodos y materiales del modelo GLTF
     const { nodes, materials } = useGLTF("models3d/Oceanshi.glb");
     const [clickedObject, setclickedObjects] = useState(null);
-  
-  
-  const group = useRef();
-  
-
-  const handleClick = (e, objectName) => {
-    e.stopPropagation();
-    const position = e.object.position;
-    setclickedObjects({ name: objectName, position });
-  };
+    
     return (
       <group {...props} dispose={null}>
         <group name="Scene">
@@ -265,6 +257,7 @@ const Ocean = (props) => {
                     material={materials['Plastic_Bucket.001']}
                     position={[-835.904, 1850.203, 374.107]}
                     scale={13.691}
+                    
                   />
                 </group>
               </group>
@@ -344,6 +337,7 @@ const Ocean = (props) => {
       </group>
     )
   }
+
 
 export default Ocean; 
 
