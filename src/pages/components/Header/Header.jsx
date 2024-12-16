@@ -23,7 +23,6 @@ const Header = () => {
               {/* Link a la página de contaminacion */}
               <Link to="/bienvenida">Contaminacion de agua</Link>
             </li>
-
             <li>
               {/* Link a la página de escazes */}
               <Link to="/escazes">Escazes de agua </Link>
@@ -37,6 +36,15 @@ const Header = () => {
               {/* Link a la página de acidificacion */}
               <Link to="/Guia">Evaluacion  </Link>
             </li>
+            
+            <li>
+              {/* Link a la página de acidificacion */}
+              <Link to="/quizz"> quiz guia </Link>
+            </li>
+
+
+      
+            
           </ul>
         </nav>
       </header>
