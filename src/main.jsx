@@ -17,7 +17,6 @@ import Bienvenida from "./pages/Conta/Bienvenida/bienvenida"
 import Soluciones from "./pages/Conta/Soluciones/soluciones"
 import ScenaSolucion from "./pages/Conta/Soluciones/scenasolucion/ScenaSolucion"
 import ScenaConsecuencias from "./pages/Conta/Consecuencias/scenaconsecuencias/ScenaConsecuencias";
-import Quiz from "./pages/quiz/Quiz";
 import Guia from "./pages/guiaquiz/Guia";
 import Video from "./pages/Conta/Bienvenida/Video";
 import Videos from "./pages/Conta/Bienvenida/Videos";
@@ -40,7 +39,6 @@ const router = createBrowserRouter([
   {path: "/soluciones", element: <Soluciones/>, },
   {path: "/ScenaSolucion", element: <ScenaSolucion/>, },
   {path: "/ScenaConsecuencias", element: <ScenaConsecuencias/>, },
-  {path: "/Quiz", element: <Quiz/>, },
   {path: "/Guia", element: <Guia/>, },
   {path: "/Video", element: <Video/>, },
   {path: "/Videos", element: <Videos/>, },
