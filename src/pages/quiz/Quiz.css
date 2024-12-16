@@ -8,7 +8,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 75px;
   }
   
   /* Título principal */
@@ -117,20 +117,20 @@
     padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
-    color: #be1212;
+    color: #127fbe;
     background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
     animation: fade-in-out 2s forwards; /* Animación */
   }
   
   .feedback-popup.correct {
-    background-color: #4caf50; /* Verde para respuestas correctas */
+    background-color: #0a9d0e; /* Verde para respuestas correctas */
   }
   
   .feedback-popup.incorrect {
-    background-color: #f44336; /* Rojo para respuestas incorrectas */
+    background-color: #f41f10d2; /* Rojo para respuestas incorrectas */
   }
   
   /* Animación de entrada y salida */
@@ -203,13 +203,13 @@
   margin-right: 350px;
 }
 
-.ejemplo {
+.ejemploo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 92.5vh;
   
-  background-image: url('https://coral.org/wp-content/uploads/2022/04/Untitled-design-1.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-image: url('https://www.caribbeannewsdigital.com/sites/default/files/2020-10/6-mejores-acuarios-planeta.jpg'); /* Reemplaza con la ruta de tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -223,4 +223,27 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
   width: 550  px;
+}
+
+.rewards-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rewards-section h3 {
+  color: #2c3e50;
+}
+
+.rewards-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rewards-section li {
+  margin: 5px 0;
+  color: #27ae60;
+  font-weight: bold;
 }

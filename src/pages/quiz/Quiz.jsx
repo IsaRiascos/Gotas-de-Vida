@@ -99,9 +99,9 @@ const QuizComponent = () => {
 
     // Establecer el mensaje de retroalimentación
     if (isCorrect) {
-      setFeedback("¡Correcto! Felicidades ");
+      setFeedback("✅ ¡Muy bien! Has acertado la respuesta.");
     } else {
-      setFeedback("Incorrecto, S");
+      setFeedback("❌ ¡Incorrecto! Pero no te preocupes, ¡puedes intentarlo de nuevo!");
     }
 
     // Mostrar retroalimentación
@@ -131,14 +131,14 @@ const QuizComponent = () => {
   return (
     <>
       <Header />
-     <div className="ejemplo">
+     <div className="ejemploo">
 
   
       {/* Ventana emergente para retroalimentación */}
       {feedbackVisible && (
         <div
           className={`feedback-popup ${
-            feedback === "¡Correcto!" ? "correct" : "incorrect"
+            feedback === "✅ ¡Muy bien! Has acertado la respuesta." ? "correct" : "incorrect"
           }`}
         >
           <p>{feedback}</p>

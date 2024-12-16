@@ -134,7 +134,7 @@ const useQuizStore = create((set) => ({
     incorrectAnswers: 0,
     score: 0,
     percentageQuizCompleted: 0,
-  },
+    },
 
   // Manejar respuesta de una pregunta
   answerQuestion: (isCorrect, uid) =>
@@ -150,6 +150,9 @@ const useQuizStore = create((set) => ({
         currentQuestionIndex < questions.length - 1
           ? currentQuestionIndex + 1
           : currentQuestionIndex; // No exceder el índice
+
+
+          
       const percentageQuizCompleted = Math.min( //Aumento del porcentaje 
         state.quiz.percentageQuizCompleted + 8.34, 
         100
