@@ -25,7 +25,7 @@ const Header = () => {
             </li>
             <li>
               {/* Link a la página de escazes */}
-              <Link to="/escazes">Escazes de agua </Link>
+              <Link to="/Entran">Escazes de agua </Link>
             </li>
 
             <li>

@@ -6,20 +6,21 @@ import Oasis from "./Oasis";
 import LightsOasis from "./LightsOasis";
 import ControlsO from "./ControlsOcto";
 import { Canvas } from '@react-three/fiber';
-import Camel from "./camel"; // Importa el componente Camel
+import { Html } from '@react-three/drei'; // Importa el componente Html
+import Camel from "./camel";
 import Staging from './staging/staging';
 
 const EscazesCyC = () => {
-  const [playAnimation, setPlayAnimation] = useState(false);  // Estado para controlar la animación
+  const [playAnimation, setPlayAnimation] = useState(false); // Estado para controlar la animación
   const navigate = useNavigate();
+
   const cameraSettings = {
     position: [5, 30, 50],
     fov: 45,
-    // otras configuraciones
   };
 
   const handleNextPage = () => {
-    navigate('/next-page'); // Ajusta esta ruta según tu siguiente página
+    navigate('/Mejora'); // Ajusta esta ruta según tu siguiente página
   };
 
   const handlePreviousPage = () => {
@@ -27,7 +28,7 @@ const EscazesCyC = () => {
   };
 
   const handleButtonClick = () => {
-    setPlayAnimation(true);  // Inicia la animación al hacer clic
+    setPlayAnimation(true); // Inicia la animación al hacer clic
   };
 
   return (
@@ -43,19 +44,22 @@ const EscazesCyC = () => {
           métodos de riego inadecuados desperdician grandes cantidades de agua; y a
           la contaminación de fuentes hídricas por químicos y desechos industriales,
           lo cual disminuye la disponibilidad de agua potable.
-        </p>      
+        </p>
       </div>
       <div className="canvas-container">
-        {/* Botón para iniciar la animación */}
-        <button onClick={handleButtonClick}>DESPERDICIAR AGUA</button>
-
         <Canvas shadows camera={cameraSettings} style={{ background: 'linear-gradient(#87CEEB, #1E90FF)' }}>
           <ControlsO />
           <LightsOasis />
           <Oasis />
-          <Staging/>
+          <Staging />
 
-          {/* Pasa el estado playAnimation al componente Camel */}
+          {/* Botón dentro de la escena, en la esquina superior derecha */}
+          <Html position={[7, 10, -5]} style={{ pointerEvents: 'auto' }}>
+            <button onClick={handleButtonClick} style={buttonStyle}>
+              DESPERDICIAR AGUA
+            </button>
+          </Html>
+
           <group scale={[0.035, 0.035, 0.035]} position={[4, 0, 25]}>
             <Camel playAnimation={playAnimation} />
           </group>
@@ -68,6 +72,18 @@ const EscazesCyC = () => {
       </div>
     </>
   );
+};
+
+// Estilo del botón
+const buttonStyle = {
+  padding: "10px 20px",
+  fontSize: "14px",
+  borderRadius: "5px",
+  border: "none",
+  backgroundColor: "#3498db",
+  color: "white",
+  cursor: "pointer",
+  position: "relative",
 };
 
 export default EscazesCyC;

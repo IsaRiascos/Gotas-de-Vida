@@ -1,0 +1,70 @@
+.container-solucione{
+    font-family: 'Lucids Console',monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px ;
+    width: 100%;
+    padding: 43px;
+    margin: 2px;
+    margin-top: 50px;
+    background-color:       #d9b5a050;
+   
+
+    
+}
+.containers{
+    display: flex;
+    max-width: 800px;
+    margin: 50px;
+    margin-top: 0px;
+    
+}
+.ciclo-container {
+    position: absolute;
+    top: 10%; /* Ajusta este valor para moverlo hacia abajo o arriba */
+    right: 0; /* Alinea el contenedor a la derecha */
+    width: 400px; /* Ajusta el tamaño del contenedor */
+    height: 500px; /* Ajusta la altura del contenedor */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del contenedor */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ciclo-container canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .container-solucione2 {
+    width: 60%; /* El contenido de texto ocupa el 60% del ancho */
+  }
+  
+  .container-solucione {
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 35%; /* El contenedor de imágenes ocupa el 35% del ancho */
+    display: flex;
+    flex-direction: column; /* Para apilar las imágenes verticalmente */
+    justify-content: flex-start; /* Alinea las imágenes desde el inicio */
+    gap: 50px; /* Espacio entre las imágenes */
+    margin-top: 50px;
+  }
+  
+  .vertical-image {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    max-height: 400px; /* Controla la altura máxima de cada imagen */
+  }
+  

@@ -6,11 +6,12 @@ const  Saludo =() =>{
         center
         distanceFactor={15}
         transform
-        position={[19,5,1]}
+        position={[39,5,1]}
         rotation={[0, -Math.PI / 2, 0]} 
+        scale={8}
         
         >
-            <h1>NO DESPERDICIEMOS EL AGUA</h1>
+            <h1>DAR CLICK ALA GOTA    NO DESPERDICIEMOS EL AGUA QUE SE VA Y NO VUELVE</h1>
         </Html>
     )
 
