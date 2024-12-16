@@ -76,15 +76,28 @@ export default function Login() {
           <Header /> {/* Mostramos el componente de encabezado */}
           <p className="welcome-text">
             {" "}
-            {/* Texto de bienvenida */}¡ Bienvenido {user.displayName} !{" "}
+            {/* Texto de bienvenida */} {user.displayName} {" "}
             {/* Muestra el nombre del usuario */}
+          
+          </p>
+
+          <p className="Foto">
+          <img src={ "https://i.pinimg.com/736x/ea/5f/c9/ea5fc9680cec81756dcd5f12d63dc3f5.jpg"  }  />
+            
+
           </p>
           <p className="present-text">
             {" "}
             {/* Texto de presentación */}
-            Hola {user.displayName}, si deseas cerrar sesión, por favor presiona
-            el botón verde
+            ✔️ Hola {user.displayName}, al final del menú encontrarás un quiz interactivo para aprender y poner a prueba tus conocimientos. 
+            También podrás ganar recompensas y ver tus puntajes. ¡Buena suerte!" 
+            <br/>
+            <br/><strong> 🎯 Si deseas cerrar sesion, presiona el boton azul.. </strong>
+            
+            
           </p>
+
+          
           
           <button className="button-logout" onClick={handleLogout}>
             {" "}
@@ -100,6 +113,7 @@ export default function Login() {
             </div>
             <div className="text">Cerrar sesión</div> {/* Texto del botón */}
           </button>
+          
         </>
       ) : (
         

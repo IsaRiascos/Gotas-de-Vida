@@ -1,33 +1,55 @@
+.Foto img {
+    width: 250px; /* Cambia el ancho de la imagen */
+    height: 250px; /* Cambia el alto de la imagen */
+    border-radius: 50% ; /* Hace la imagen redonda */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente si es más grande */
+    display: block; /* Centrado vertical si es necesario */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra para estilo */
+    
+  }
+  .Foto {
+    position: absolute; /* Usa posición absoluta */
+    top: 150px; /* Ajusta según sea necesario */
+    left: 110px; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+
+  }
 /* Texto de bienvenida */
 .welcome-text {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     /* Tamaño de fuente grande para el texto de bienvenida */
     color: #0b0b0b;
     /* Color gris oscuro para una buena lectura */
-    text-align: center;
+    text-align: left;
     /* Centra el texto horizontalmente */
-    margin: 40px;
+    margin-left:50px;
     /* Margen alrededor del texto */
     font-weight: bold;
     /* Hace que el texto sea negrita */
     letter-spacing: 1px;
     /* Espacio entre letras para un efecto elegante */
+    margin-top: 350px;
 }
 
 /* Texto de presentación */
 .present-text {
     font-size: 1.5rem;
     /* Tamaño de fuente un poco más pequeño que el de bienvenida */
-    color: #000000;
+    color: rgb(24, 24, 24);
     /* Color negro para una buena lectura */
-    text-align: justify;
+    text-align: center;
     /* Justifica el texto para un alineamiento uniforme */
-    margin: 40px;
+    margin-left:  600px;
     /* Margen alrededor del texto */
-    font-weight: bold;
-    /* Hace que el texto sea negrita */
     letter-spacing: 1px;
     /* Espacio entre letras para un efecto elegante */
+    margin-top: -400px;
+    width: 800px;    
+    height: 400px;
+    padding: 40px;
+    line-height:1.1em
+
 }
 
 
@@ -60,7 +82,11 @@
     /* Sombra alrededor del botón */
     background-color: rgba(70, 238, 250, 0.718);
     /* Color de fondo verde para el botón */
+    margin: 970pX;
+    margin-top: -170px;
 }
+
+
 
 /* Estilos del ícono dentro del botón */
 .sign {
@@ -173,6 +199,7 @@
     text-align: center;
     width: 550  px;
 }
+
 
 
 

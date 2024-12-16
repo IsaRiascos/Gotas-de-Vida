@@ -9,7 +9,6 @@ import Conta from "./pages/Conta/contaminacion";
 import Escazes from "./pages/escazes/Escazes";
 import EscazesCyC from "./pages/escazes/EscazesCyC";
 import Acidificacion from "./pages/acificacion/Acidficacion";
-import Perfil from "./pages/perfil/Perfil";
 import Scena from "./pages/Conta/scena-conta/Scena";
 import ScenaCausa from "./pages/Conta/Causas/scena-causas/ScenaCausa";
 import Causas from "./pages/Conta/Causas/causas";
@@ -19,8 +18,6 @@ import Soluciones from "./pages/Conta/Soluciones/soluciones"
 import ScenaSolucion from "./pages/Conta/Soluciones/scenasolucion/ScenaSolucion"
 import ScenaConsecuencias from "./pages/Conta/Consecuencias/scenaconsecuencias/ScenaConsecuencias";
 import QuizComponent from "./pages/quiz/Quiz";
-import Entrance from "./pages/escazes/Entrance/Entrance";
-import Mejoras from "./pages/escazes/Mejoras";
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
@@ -31,7 +28,6 @@ const router = createBrowserRouter([
   {path: "/escazes", element: <Escazes/>},
   {path: "/escazes-cyc", element: <EscazesCyC/>},
   {path: "/acidificacion", element: <Acidificacion/>},
-  {path: "/perfil", element: <Perfil/>, },
   {path: "/Scena", element: <Scena/>, },
   {path: "/causas", element: <Causas/>, },
   {path: "/ScenaCausa", element: <ScenaCausa/>, },
@@ -41,8 +37,7 @@ const router = createBrowserRouter([
   {path: "/ScenaSolucion", element: <ScenaSolucion/>, },
   {path: "/ScenaConsecuencias", element: <ScenaConsecuencias/>, },
   {path: "/quizz", element: <QuizComponent/>, },
-  {path: "/Entran", element: <Entrance/>, },
-  {path: "/Mejora", element: <Mejoras/>, },
+  
   
 ]);
 

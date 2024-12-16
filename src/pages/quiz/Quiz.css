@@ -3,7 +3,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color:  rgba(255, 255, 255, 0.8);;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
   /* Título principal */
   .quiz-title {
     font-size: 2rem;
-    color: #333;
+    color: #0021fac0;
     margin-bottom: 20px;
   }
   
@@ -53,8 +53,8 @@
     gap: 10px;
   }
   
-  /* Botón de reinicio  y finalizar */
-  .finish-button,
+  /* Boton de finalizar */
+  
   .reset-button {
     background-color: #dc3545;
     color: white;
@@ -72,6 +72,7 @@
   
   /* Progreso */
   .stats {
+    margin-top: 20px;
     text-align: center;
     font-size: 1.2rem;
     color: #555;
@@ -80,10 +81,11 @@
   .option-draggable {
     padding: 10px;
     margin: 5px;
-    background-color: #24bcfd;
+    background-color:#4FC3F7;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: grab;
+    color: white;
   }
   
   .option-draggable:active {
@@ -169,7 +171,56 @@
   text-align: center;
 }
 
+/* Resaltar la pista*/
 .option-draggable.highlighted {
-  background-color: yellow; /* Fondo amarillo para resaltar */
-  border: 2px solid red; /* Borde rojo */
+  background-color: rgb(130, 209, 236); 
+  border: 2px solid rgb(138, 138, 138); 
+}
+
+/* Boton Pista*/
+.hint-button{
+  background-color: #A5D6A7;
+  color: black ;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 300px;
+  margin-top: -50px;
+}
+
+.finish-button{
+  background-color: #ffb84dc4;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 350px;
+}
+
+.ejemplo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92.5vh;
+  
+  background-image: url('https://coral.org/wp-content/uploads/2022/04/Untitled-design-1.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.containerjeje {
+  background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 550  px;
 }
