@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Guia = () => {
     const navigate = useNavigate();
     const handleNextPage = () => {
-      navigate("/quiz");
+      navigate("/quizz");
     };
   return (
     <>

@@ -17,7 +17,7 @@ const QuizComponent = () => {
   const [quizCompleted, setQuizCompleted] = useState(false); //Comprueba si el quiz ha sido completado
   const [feedback, setFeedback] = useState("");//Mostrar la retroalimentacion de una pregunta
   const [feedbackVisible, setFeedbackVisible] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(600); // Temporizador del quiz
+  const [timeLeft, setTimeLeft] = useState(200); // Temporizador del quiz
   const [useHint, setUseHint] = useState(false); // Estado para controlar si se ha usado la pista
   const [highlightedOption, setHighlightedOption] = useState(null); // Estado para resaltar la opción correcta
 
@@ -74,7 +74,7 @@ const QuizComponent = () => {
     // Eliminar el resaltado después de 2 segundos
     setTimeout(() => {
       setHighlightedOption(null);
-    }, 2000);
+    }, 1000);
   };
 
   //Manejar el arrastre de las opciones 
@@ -99,9 +99,9 @@ const QuizComponent = () => {
 
     // Establecer el mensaje de retroalimentación
     if (isCorrect) {
-      setFeedback("¡Correcto!");
+      setFeedback("¡Correcto! Felicidades ");
     } else {
-      setFeedback("Incorrecto, re pailas papi");
+      setFeedback("Incorrecto, S");
     }
 
     // Mostrar retroalimentación
@@ -131,7 +131,9 @@ const QuizComponent = () => {
   return (
     <>
       <Header />
+     <div className="ejemplo">
 
+  
       {/* Ventana emergente para retroalimentación */}
       {feedbackVisible && (
         <div
@@ -218,6 +220,7 @@ const QuizComponent = () => {
             </div>
           </div>
         )}
+      </div>
       </div>
     </>
   );

@@ -151,7 +151,7 @@ const useQuizStore = create((set) => ({
           ? currentQuestionIndex + 1
           : currentQuestionIndex; // No exceder el índice
       const percentageQuizCompleted = Math.min( //Aumento del porcentaje 
-        state.quiz.percentageQuizCompleted + 50, 
+        state.quiz.percentageQuizCompleted + 8.34, 
         100
       );
       

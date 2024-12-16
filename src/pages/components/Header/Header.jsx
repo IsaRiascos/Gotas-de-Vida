@@ -32,14 +32,11 @@ const Header = () => {
               {/* Link a la página de acidificacion */}
               <Link to="/acidificacion">Acidificacion de los oceanos  </Link>
             </li>
-            <li>
-              {/* Link a la página de acidificacion */}
-              <Link to="/Guia">Evaluacion  </Link>
-            </li>
+            
             
             <li>
               {/* Link a la página de acidificacion */}
-              <Link to="/quizz"> quiz guia </Link>
+              <Link to="/Guia"> Evaluacion </Link>
             </li>
 
 
