@@ -41,7 +41,11 @@ const Header = () => {
 
               
             </li>
-           
+            
+            <li>
+              {/* Link a la página de acidificacion */}
+              <Link to="/quizz"> quiz guia </Link>
+            </li>
 
 
       

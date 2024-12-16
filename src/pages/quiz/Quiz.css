@@ -1,0 +1,175 @@
+/* Contenedor principal del quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  /* Título principal */
+  .quiz-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de la pregunta */
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Texto de la pregunta */
+  .question-text {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Contenedor de opciones */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  /* Mensaje de Puntacion */
+  .completion-message {
+    font-size: 1.8rem;
+    color: #28a745;
+  }
+  
+  /* Pie de página */
+  .footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Botón de reinicio  y finalizar */
+  .finish-button,
+  .reset-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-button:hover {
+    background-color: #a71d2a;
+  }
+  
+  /* Progreso */
+  .stats {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  /* Barras de las respuestas */
+  .option-draggable {
+    padding: 10px;
+    margin: 5px;
+    background-color: #24bcfd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+  }
+  
+  .option-draggable:active {
+    cursor: grabbing;
+  }
+  
+  /* Barra donde se arrastran las respuestas*/
+  .drop-zone {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #dddcdc;
+  }
+  
+  .drop-zone:hover {
+    border-color: #888;
+    background-color: #f4f4f4;
+  }
+
+  /*Mensajes de retroalimentacion*/
+  .feedback-popup {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Asegura que quede sobre otros elementos */
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #be1212;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    animation: fade-in-out 2s forwards; /* Animación */
+  }
+  
+  .feedback-popup.correct {
+    background-color: #4caf50; /* Verde para respuestas correctas */
+  }
+  
+  .feedback-popup.incorrect {
+    background-color: #f44336; /* Rojo para respuestas incorrectas */
+  }
+  
+  /* Animación de entrada y salida */
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    10%, 90% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -40%);
+    }
+  }
+  
+
+/* Posiciona el temporizador en la parte superior derecha */
+.timer-container.top-right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: rgba(234, 230, 230, 0.7); /* Fondo semitransparente */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+/* Para mejorar la apariencia del temporizador */
+.timer-container h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.option-draggable.highlighted {
+  background-color: yellow; /* Fondo amarillo para resaltar */
+  border: 2px solid red; /* Borde rojo */
+}

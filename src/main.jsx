@@ -18,6 +18,7 @@ import Bienvenida from "./pages/Conta/Bienvenida/bienvenida"
 import Soluciones from "./pages/Conta/Soluciones/soluciones"
 import ScenaSolucion from "./pages/Conta/Soluciones/scenasolucion/ScenaSolucion"
 import ScenaConsecuencias from "./pages/Conta/Consecuencias/scenaconsecuencias/ScenaConsecuencias";
+import QuizComponent from "./pages/quiz/Quiz";
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
   {path: "/soluciones", element: <Soluciones/>, },
   {path: "/ScenaSolucion", element: <ScenaSolucion/>, },
   {path: "/ScenaConsecuencias", element: <ScenaConsecuencias/>, },
+  {path: "/quizz", element: <QuizComponent/>, },
   
   
 ]);
