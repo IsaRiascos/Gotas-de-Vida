@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import "./guia.css";
+import "./Guia.css";
 import { useNavigate } from "react-router-dom";
 
 const Guia = () => {
