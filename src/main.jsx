@@ -20,6 +20,7 @@ import ScenaConsecuencias from "./pages/Conta/Consecuencias/scenaconsecuencias/S
 import QuizComponent from "./pages/quiz/Quiz";
 import Entrance from "./pages/escazes/Entrance/Entrance";
 import Mejoras from "./pages/escazes/Mejoras";
+import Guia from "./pages/guiaquiz/Guia";
 const router = createBrowserRouter([
 
   {path:"/",element: <Navigate to= "/Login" replace/>},
@@ -38,9 +39,10 @@ const router = createBrowserRouter([
   {path: "/soluciones", element: <Soluciones/>, },
   {path: "/ScenaSolucion", element: <ScenaSolucion/>, },
   {path: "/ScenaConsecuencias", element: <ScenaConsecuencias/>, },
-  {path: "/Guia", element: <QuizComponent/>, },
+  {path: "/quizz", element: <QuizComponent/>, },
   {path: "/Entran", element: <Entrance/>, },
   {path: "/Mejora", element: <Mejoras/>, },
+  {path: "/Guia", element: <Mejoras/>, },
   
 ]);
 
